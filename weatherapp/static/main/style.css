@@ -1,0 +1,77 @@
+.container{
+   width: 101%;
+   height: 101%;
+background-color: lightslategrey;
+padding-top: 10%;
+margin-top: 10px;
+background-repeat: no-repeat;
+background-size: 101%;
+background-position: center;
+background-image: url('https://images.all-free-download.com/images/graphiclarge/blue_sky_05_hd_picture_166271.jpg');
+
+
+
+
+}
+.weather{
+    position: relative;
+    font-size:  50px;
+    margin-left: 35%;
+    font-style: oblique;
+}
+#components{
+   
+    
+    width: 400px;
+    height: 200px;
+    margin-top: 5%;
+    
+    margin-left: 20%;
+   
+    color: blanchedalmond;
+    padding-left: 100px;
+    padding-top: 69px;
+}
+#city{
+    border-radius: 10px;
+    height: 30px;
+    
+    width: 260px;
+    margin-left: 5%;
+    border-color: darkblue;
+   border-collapse: collapse;
+
+}
+#get{
+    background-color:white;
+    height: 40px;
+    width: 70px;
+    margin-top: 20px;
+    font-style: italic;
+    border: color 3px; 
+    border-color:#1f7bf2;
+    margin-left: 25%;
+    cursor: pointer;
+    font-style: italic;
+}
+#get:hover{
+    transition-duration: 0.2s;
+    background-color:#1f7bf2;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.row{
+    background-color:none;
+    
+    margin-left: 60%;
+    margin-top: -290px;
+}
+h3{
+    font-size: 30px;
+
+}
+#icon{
+    size: 50px;
+    height: 60px;
+    width: 60px;
+
+}

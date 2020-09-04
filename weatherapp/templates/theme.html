@@ -1,0 +1,33 @@
+{% load static %}
+<html>
+<head>
+<link rel="stylesheet" href="{% static 'main/style.css'%}">
+  
+</head>
+<body>
+<div class="container">
+    <h2 class="weather">Weather Be like</h2>
+    <div id="components">
+     <form  method="post">
+         {%csrf_token%}
+        <input type="text" name="city" id="city" placeholder="Enter city"><br>
+        <button id="get" type="submit">Go</button>
+    </form>
+    </div>
+    <div class="row">
+        {% if country_code and feels and temp and place and image and description %}
+        <img src="http://openweathermap.org/img/w/{{image}}.png" id="icon" width="90" height="90">
+        <h3>Temperature:{{temp}}</h3>
+        <h3>Description:{{description}}</h3>
+        <h3>Feels like:{{feels}}</h3> 
+        <h3>Location:{{place}}</h3>
+       
+        
+        {% endif %}
+    </div>
+    
+</div>
+
+</body>
+
+</html>

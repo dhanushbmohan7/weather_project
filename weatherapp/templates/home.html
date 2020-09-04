@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+</head>
+<body>
+    <h2>Weather</h2>
+    <h2></h2>
+    <form method="post">
+        {% csrf_token %}
+
+        <input type="text" name="city" id="city" placeholder="enter city">
+        <input type="submit" value="go">
+    </form>
+    <div class="row">
+
+        {% if country_code and temp and place %}
+        <h3>country code:{{country_code}}</h3>
+        <h3>temperature:{{temp}}</h3>
+        <h3>location:{{place}}</h3>
+        
+        {% endif %}
+    </div>
+</body>
+</html>
